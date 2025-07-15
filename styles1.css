@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #1e293b;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #475569;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.calculator {
+    width: 340px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 32px 24px 24px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+.output {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+#screen {
+    width: fit-content;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    background: #f3f6fa;
+    font-size: 1.6rem;
+    color: #22223b;
+    text-align: right;
+    padding: 0 16px;
+    box-shadow: 0 2px 8px rgba(31, 38, 135, 0.05);
+    margin: 0;
+    outline: none;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.btn {
+    flex: 1 1 0;
+    margin: 0 6px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background: #f5f6fa;
+    color: #22223b;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(31, 38, 135, 0.07);
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:active {
+    background: #e0e1e6;
+    color: #22223b;
+    transform: scale(0.97);
+}
+
+.btn:last-child,
+.btn:nth-child(1),
+.btn:nth-child(2),
+.btn:nth-child(4) {
+    background: #f5f6fa;
+    color: #22223b;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 98vw;
+        padding: 16px 4px;
+    }
+    .btn {
+        font-size: 1rem;
+        height: 38px;
+        margin: 0 2px;
+    }
+}
